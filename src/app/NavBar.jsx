@@ -10,6 +10,12 @@ const NavBar = () => {
       <li>
         <Link href="/contact">Contact Us</Link>
       </li>
+      <li>
+        <Link href="/privacy">Privacy & Policy</Link>
+      </li>
+      <li>
+        <Link href="/blogs">Blogs</Link>
+      </li>
     </>
   );
 
