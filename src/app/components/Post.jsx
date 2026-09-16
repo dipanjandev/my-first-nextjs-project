@@ -1,13 +1,16 @@
+import Link from "next/link";
 import React from "react";
 
 const Post = ({ post }) => {
-  const { title } = post;
+  const { id, title } = post;
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <div className="card-body">
-        <h2 className="card-title">{post.title}</h2>
+        <h2 className="card-title">{title}</h2>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Show Details</button>
+          <Link href={`./blogs/${id}`}>
+            <button className="btn btn-primary">Show Details</button>
+          </Link>
         </div>
       </div>
     </div>

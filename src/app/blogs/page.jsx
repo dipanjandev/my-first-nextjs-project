@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "../components/Post";
 
+// TODO: Fatch Data
 const blogsData = [
   {
     id: 1,
@@ -48,6 +49,7 @@ const blogsData = [
     imageUrl: "https://picsum.photos/seed/freelance/400/250",
   },
 ];
+
 const BlogsPage = () => {
   return (
     <div>
